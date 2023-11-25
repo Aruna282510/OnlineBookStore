@@ -1,2 +1,2 @@
-Online Bookstore using Java Servets and Mysql 
+Online Bookstore using Java Servets and MYSQL
 
