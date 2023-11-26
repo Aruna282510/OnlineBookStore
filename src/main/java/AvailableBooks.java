@@ -187,6 +187,7 @@ public class AvailableBooks extends HttpServlet {
                 out.println("<p><strong>Book Name:</strong> " + bookName + "</p>");
                 out.println("<p><strong>Author:</strong> " + bookAuthor + "</p>");
                 out.println("<button onclick=\"downloadBook('" + bookLink + "')\">Download</button>");
+                //out.println("<h4>"+bookLink+"</h4>");
                 
             }
 
@@ -201,8 +202,10 @@ public class AvailableBooks extends HttpServlet {
            
             out.println("<script>");
             out.println("function goBack() {");
-            
             out.println("  window.history.back();");
+            out.println("}");
+            out.println("function downloadBook(link) {");
+            out.println("  window.location.href = link;");
             out.println("}");
             out.println("</script>");
 
